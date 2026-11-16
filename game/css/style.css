@@ -1,0 +1,43 @@
+/* DANFO RUSH — the page around the canvas. The game itself is one canvas;
+   the page just centres it on a dusk background and scales it to fit. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #241a12;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#stage {
+  text-align: center;
+  max-width: 1280px;
+  width: 100%;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #ff9d5c;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+}
+
+#hint {
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgba(255, 228, 180, 0.7);
+}
